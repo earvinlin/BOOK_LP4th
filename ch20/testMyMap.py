@@ -10,3 +10,14 @@ def mymap(func, *seqs) :
 print(mymap(abs, [-2, -1, 0, 1, 2]))
 print("==")
 print(mymap(pow, [1, 2, 3], [2, 3, 4, 5]))
+
+def mymapPad(*seqs, pad=None) :
+    seqs = [list(S) for S in seqs]
+    res = []
+#    print(seqs)
+    while any(seqs) :
+        res.append(tuple((S.pop(0) if S else pad) for S in seqs))
+    return res
+
+S1, S2 = 'abc', 'xyz123'
+print(mymapPad(S1, S2, pad=99))
