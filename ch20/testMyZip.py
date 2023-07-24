@@ -19,3 +19,6 @@ S1, S2 = 'abc', 'xyz123'
 print(myzip(S1, S2))
 print(mymapPad(S1, S2))
 print(mymapPad(S1, S2, pad = 99))
+
+S3 = 'DEFG'
+print(list(zip(S1, S2, S3)))
