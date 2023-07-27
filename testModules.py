@@ -78,7 +78,8 @@ L = [1,2,3,4]
 func5(func2(*L), L)
 """
 
-# python學習手冊4th(中文版) p.465~p.466
+# python學習手冊4th(中文版) p.465~p.
+"""
 L = ['a', 'b', 'c', 'z', 'h', 'a', 'i', 'b']
 L = 'abcdegsah'
 L1 = 'abdfeig'
@@ -91,3 +92,29 @@ print(R)
 #=======
 R2 = in2.intersect(L1, L3)
 print(R2)
+"""
+
+# p.475
+def mysum0(L) :
+    return 0 if not L else L[0] + mysum0(L[1:])
+
+def mysum1(L) :
+    return [0] if len(L) == 1 else L[0] + mysum1(L[1:])
+
+def mysum2(L) :
+    first, *rest = L 
+    return first if not rest else first + mysum2(rest)
+
+# p.477
+def sumtree(L) :
+    tot = 0
+    for x in L :
+        if not isinstance(x, list) :
+            tot += x
+        else :
+            tot += sumtree(x)
+    return tot
+
+L = [1, [2, [3, 4], 5], 6, [7, 8]]
+print("sumtree= ", sumtree(L))
+
