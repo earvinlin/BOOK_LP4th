@@ -118,3 +118,28 @@ def sumtree(L) :
 L = [1, [2, [3, 4], 5], 6, [7, 8]]
 print("sumtree= ", sumtree(L))
 
+# p.478
+def echo(message) :
+    print(message)
+
+x = echo
+x('Indirect call!!!')
+
+def indirect(func, arg) :
+    func(arg)
+
+indirect(echo, 'Argument call~~')
+
+schedule = [(echo, 'Spam!'), (echo, 'Ham!')]
+for (func, arg) in schedule :
+    func(arg)
+
+# p.479 (我不大能理解此處的用法…)
+def make(label) :
+    def echo(message) :
+        print(label + ':' + message)
+    return echo
+
+F = make('Spam')
+F('Ham!')
+F('Eggs!')
