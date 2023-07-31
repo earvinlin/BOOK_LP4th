@@ -143,3 +143,18 @@ def make(label) :
 F = make('Spam')
 F('Ham!')
 F('Eggs!')
+print("\n")
+
+# p.548
+print("paython path: ", sys.path)
+
+# Ch22, p.556
+from ch22.small import x, y
+print("=== Start CH22 ===")
+print("Imp,\tx= ", x, "\t,y= ", y)
+# 以from複製而來的變量名和其來源的文件之間並沒有關聯
+x = 42
+y[0] = 42
+print("Assign,\tx= ", x, "\t,y= ", y)
+
+
