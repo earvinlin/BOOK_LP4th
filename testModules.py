@@ -151,25 +151,8 @@ F('Eggs!')
 
 
 # p.585
-#import ch23.spam
-#print(ch23.spam)
+import ch23.spam
+print(ch23.spam)
 
-from .. import spam
-print(spam)
-=======
-print("\n")
-
-# p.548
-print("paython path: ", sys.path)
-
-# Ch22, p.556
-from ch22.small import x, y
-print("=== Start CH22 ===")
-print("Imp,\tx= ", x, "\t,y= ", y)
-# 以from複製而來的變量名和其來源的文件之間並沒有關聯
-x = 42
-y[0] = 42
-print("Assign,\tx= ", x, "\t,y= ", y)
-
-
->>>>>>> bf1c6259e1e49ea25549f554e05e360166e36092
+#from .. import spam
+#print(spam)
