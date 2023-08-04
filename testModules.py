@@ -94,6 +94,8 @@ R2 = in2.intersect(L1, L3)
 print(R2)
 """
 
+
+"""
 # p.475
 def mysum0(L) :
     return 0 if not L else L[0] + mysum0(L[1:])
@@ -143,3 +145,13 @@ def make(label) :
 F = make('Spam')
 F('Ham!')
 F('Eggs!')
+
+"""
+
+
+# p.585
+#import ch23.spam
+#print(ch23.spam)
+
+from .. import spam
+print(spam)
