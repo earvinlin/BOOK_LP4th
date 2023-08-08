@@ -149,10 +149,11 @@ F('Eggs!')
 
 """
 
+print("\n=== START FROM HERE ===\n")
 
 # p.585
-import ch23.spam
-print(ch23.spam)
+#import ch23.spam
+#print(ch23.spam)
 
-#from .. import spam
-#print(spam)
+from ch23 import spam
+print(spam)

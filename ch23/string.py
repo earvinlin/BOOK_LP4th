@@ -1,1 +1,1 @@
-print('Ni' * 8)
+print("from string.py : ",'Ni' * 8)
