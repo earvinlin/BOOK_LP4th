@@ -1,0 +1,6 @@
+#.gitignore
+
+.DS_Store
+ch20/.DS_Store
+ch20/__pycache__/.DS_Store
+ch20/__pycache__/*.pyc
